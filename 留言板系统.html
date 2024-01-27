@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>留言板系统</h1>
+        
+    </header>
+    <main>
+        <div class="Postcomments">
+            <label for="user">
+                <img  id="iconImg" class="icon" alt="用户" />：
+                <input id="user" type="text" placeholder="请输入用户名" />
+            </label>
+            <label for="comment">留言：<input id="comment" type="text" placeholder="请输入留言内容" /></label>
+            <button id="issue">发布</button>
+        </div>
+        <h2>已有评论：<span id="commentNums">1</span>条</h2>
+        
+        <div class="comments">
+            <div class="Signcomments" id="Signcomment1">
+                <p class="username"><img class="icon" src="./随机头像/2.jpg" alt="[!头像显示失败]">宁彩初nesuahatusu</p>
+                <p>这下真全能王了</p>
+                <span>2024-01-21 14:12</span>
+                <button onclick="likeComment(this)"><img class="like" src="./点赞.png" /></button><span id="likenums">19</span>
+                <hr>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
