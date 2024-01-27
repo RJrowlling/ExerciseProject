@@ -19,10 +19,10 @@ const addComment = () => {
     comments.innerHTML += 
     `
     <div class="Signcomments" id="Signcomment${commentCounts}">
-        <p class="username"><img class="icon" src="./随机头像/${randomNum}.jpg" alt="[!头像显示失败]">${userName.value}</p>
+        <p class="username"><img class="icon" src="../项目资源/随机头像/${randomNum}.jpg" alt="[!头像显示失败]">${userName.value}</p>
         <p>${comment.value}</p>
         <span>${commentDate}</span>
-        <button onclick="likeComment(this)"><img class="like" src="./点赞.png" /></button><span id="likenums">0</span>
+        <button onclick="likeComment(this)"><img class="like" src="../项目资源/点赞.png" /></button><span id="likenums">0</span>
         <hr>
     </div>
     `
@@ -30,7 +30,7 @@ const addComment = () => {
     comment.value = '';
     userName.value = '';
     randomNum = Math.floor(Math.random() * 8) + 1;
-    iconImg.src = `./随机头像/${randomNum}.jpg`;
+    iconImg.src = `../项目资源/随机头像/${randomNum}.jpg`;
 }
 
 const likeComment = (button) => {
@@ -47,5 +47,5 @@ issueBtn.addEventListener('click',()=> {;
 //用户在刷新页面时，会使用8种随机头像
 window.addEventListener("load", (event) => {
     randomNum = Math.floor(Math.random() * 8) + 1;
-    iconImg.src = `./随机头像/${randomNum}.jpg`;
+    iconImg.src = `../项目资源/随机头像/${randomNum}.jpg`;
   });
