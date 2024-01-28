@@ -15,8 +15,9 @@
         <main>
             <div class="inputList">
                 <label for="todoInput">代办任务：<input id="todoInput" type="text" placeholder="请输入代办任务"/></label>
+                <button id="InputBtn">提交</button>
             </div>
-
+            <!-- 代办任务 -->
             <div class="List">
                 <button id="switchBtn">代办任务</button>
                 <table class="todoList">
@@ -24,44 +25,41 @@
                         <tr>
                             <th><input type="checkbox" /></th>
                             <th>事项</th>
-                            <th>时间</th>
+                            <th>开始时间</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr  class="todoItem">
                             <td><input type="checkbox" /></td>
-                            <td><p>吃饭</p></td>
-                            <td><span class="time">2024.1.28</span></td>
-                            <td><button>删除</button><button>完成</button></td>
+                            <td><p class="item">吃饭</p></td>
+                            <td><p class="time">2024-1-28 10:26:42</p></td>
+                            <td><button onclick="removeItem(this)">删除</button><button onclick="completeItem(this)">完成</button></td>
                         </tr>
                     </tbody>
                 </table>     
-                
+                <!-- 已办任务 -->
                 <table class="doneList">
                     <thead>
                         <tr>
                             <th><input type="checkbox" /></th>
                             <th>事项</th>
-                            <th>时间</th>
+                            <th>完成时间</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr  class="todoItem">
+                        <tr  class="doneItem">
                             <td><input type="checkbox" /></td>
-                            <td><p>吃饭</p></td>
-                            <td><span class="time">2024.1.28</span></td>
-                            <td><button>删除</button></td>
+                            <td><p class="item">吃饭</p></td>
+                            <td><p class="time">2024-1-28 10:26:42</p></td>
+                            <td><button onclick="removeItem(this)">删除</button></td>
                         </tr>
                     </tbody>
-                </table>   
+                </table>
+                <button id="batchComplate">批量完成</button>
+                <button id="batchRemove">批量删除</button>   
             </div>
-
-           
-
-
-
         </main>
 
 

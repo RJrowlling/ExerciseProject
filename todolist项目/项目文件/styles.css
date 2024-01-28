@@ -1,6 +1,7 @@
 .List {
     border: solid;
     width: 30vw;
+    margin-top: 10px;
 }
 table {
     border-spacing: 10px
