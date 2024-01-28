@@ -49,7 +49,6 @@ const addItem = () => {
     + tbody.innerHTML
 
     todoNums.textContent = document.querySelectorAll(".todoItem").length
-    todoInput.value = ''
 }
 
 //删除事项
