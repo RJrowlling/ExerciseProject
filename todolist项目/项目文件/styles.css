@@ -1,0 +1,16 @@
+.List {
+    border: solid;
+    width: 30vw;
+}
+table {
+    border-spacing: 10px
+}
+#switchBtn {
+    margin-bottom: 10px
+}
+.todoList {
+    display: contents;
+}
+.doneList {
+    display: none;
+}

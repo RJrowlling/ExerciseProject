@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>todolist项目</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Todolist项目</h1>
+            <h3>代办任务：<span id="todoNums">1</span>个</h3>
+            <h3>已完成任务：<span id="doneNums">1</span>个</h3>
+        </header>
+        <main>
+            <div class="inputList">
+                <label for="todoInput">代办任务：<input id="todoInput" type="text" placeholder="请输入代办任务"/></label>
+            </div>
+
+            <div class="List">
+                <button id="switchBtn">代办任务</button>
+                <table class="todoList">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <th>事项</th>
+                            <th>时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  class="todoItem">
+                            <td><input type="checkbox" /></td>
+                            <td><p>吃饭</p></td>
+                            <td><span class="time">2024.1.28</span></td>
+                            <td><button>删除</button><button>完成</button></td>
+                        </tr>
+                    </tbody>
+                </table>     
+                
+                <table class="doneList">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <th>事项</th>
+                            <th>时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  class="todoItem">
+                            <td><input type="checkbox" /></td>
+                            <td><p>吃饭</p></td>
+                            <td><span class="time">2024.1.28</span></td>
+                            <td><button>删除</button></td>
+                        </tr>
+                    </tbody>
+                </table>   
+            </div>
+
+           
+
+
+
+        </main>
+
+
+        <script src="./scripts.js"></Script>
+    </body>
+</html>
