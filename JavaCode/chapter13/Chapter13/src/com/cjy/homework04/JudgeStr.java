@@ -30,5 +30,6 @@ public class JudgeStr {
         System.out.println(String.format("数字有%d个", numCount));
         System.out.println(String.format("大写字母有%d个", lowerCount));
         System.out.println(String.format("小写字母有%d个", lowerCount));
+
     }
 }
