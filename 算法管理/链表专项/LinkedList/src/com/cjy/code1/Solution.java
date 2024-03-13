@@ -23,8 +23,20 @@ public class Solution {
 
         }
         return head;
+    }
 
-
+    //虚拟头结点删除元素
+    public ListNode removeElements2(ListNode head, int val) {
+        ListNode dummyHead = new ListNode(0,head); //先定义一个虚拟头结点
+        ListNode current = dummyHead;
+        while (current.next != null) {
+            if (current.next.val == val) {
+                current.next = current.next.next;
+            } else {
+                current = current.next;
+            }
+        }
+        return dummyHead.next;
     }
 }
 
@@ -34,4 +46,4 @@ class ListNode {
       ListNode() {}
       ListNode(int val) { this.val = val; }
       ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
+}
