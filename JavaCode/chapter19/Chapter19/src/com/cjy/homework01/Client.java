@@ -9,6 +9,7 @@ import java.net.UnknownHostException;
  * @author cjy
  * @version 1.0
  */
+@SuppressWarnings({"all"})
 public class Client {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
