@@ -44,6 +44,7 @@ public class Solution {
     }
 
     public int getLength(ListNode current) {
+        @Deprecated
         int length = 0;
         while (current != null) {
             length++;
