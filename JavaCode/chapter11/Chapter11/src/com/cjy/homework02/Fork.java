@@ -20,4 +20,39 @@ public class Fork {
         currentNum += 100;
         return currentNum;
     }
+
+    public Fork test() {
+        return null;
+    }
+
+
+}
+
+class a {
+
+}
+
+class b extends a {
+
+}
+
+class e extends b {
+
+}
+
+class c {
+    public a test() {
+        return null;
+    }
+    public static void hello() {
+        System.out.println();
+    }
+}
+
+class d extends c {
+    @Override
+    public b test() {
+        return null;
+    }
+
 }
