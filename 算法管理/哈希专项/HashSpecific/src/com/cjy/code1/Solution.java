@@ -11,7 +11,6 @@ import java.util.Optional;
  */
 public class Solution {
     public static void main(String[] args) {
-        Optional
         String s = "rat";
         String t = "car";
         System.out.println(isAnagram(s, t));
