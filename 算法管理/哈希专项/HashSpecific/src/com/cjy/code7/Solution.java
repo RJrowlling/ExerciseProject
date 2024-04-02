@@ -17,7 +17,6 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
  */
 public class Solution {
     public static void main(String[] args) {
-        AbstractQueuedSynchronizer
         int[] nums = {0,0,0};
         System.out.println(threeSum(nums));
     }
