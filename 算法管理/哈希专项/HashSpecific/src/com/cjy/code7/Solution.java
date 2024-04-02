@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
  * @Author cjy
@@ -15,6 +17,7 @@ import java.util.List;
  */
 public class Solution {
     public static void main(String[] args) {
+        AbstractQueuedSynchronizer
         int[] nums = {0,0,0};
         System.out.println(threeSum(nums));
     }
