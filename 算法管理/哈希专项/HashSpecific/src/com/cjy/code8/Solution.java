@@ -16,7 +16,6 @@ public class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
-        ConcurrentHashMap
 
         for (int i = 0; i < nums.length; i++) {
             //一级剪枝
