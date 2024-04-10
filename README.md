@@ -14,7 +14,15 @@
 
 2024年3月27号~2024年4月3号：学习了JUC并发编程，前期《狂神说JUC并发编程》视频为主，后期已并发编程文档为主进行学习，掌握了Java并发理论基础（JMM，synchronized，volatile）、Java中的锁（AQS，重入锁，读写锁，condition）、并发安全容器（ConCurrentHashMap，COW，阻塞队列，Fork/Join）、原子类和并发工具类（CAS，CountDownLatc等）、线程池和Executor框架、生产者消费者问题等（Java并发编程）
 
-2024年4月4号~至今：开始学习Java虚拟机（JVM），以《黑马程序员JVM完整教程》视频为主，先快速入门后，再以JVM文字资料学习为主（JVM）
+2024年4月4号~2024年4月10号：学习了Java虚拟机（JVM），前期《黑马程序员JVM完整教程》视频为主，后期以JVM文字资料学习为主（JVM），主要掌握了JVM的内存区域（运行时数据区、栈帧结构）、Java引用、可达性分析、GC算法、GC收集器、类文件结构、类加载机制等（JVM）
+
+2024年4月11号~至今：目前正在学习SSM框架，包括Spring、SpringMVC、Maven、SpringBoot和MyBatisPlus，以《黑马程序员SSM框架教程》视频为主，同时做好笔记和相关代码练习（SSM框架）
+
+
+
+
+
+
 
 ## JavaCode：
 
