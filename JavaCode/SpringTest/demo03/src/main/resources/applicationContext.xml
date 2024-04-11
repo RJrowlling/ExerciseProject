@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bookDao" class="com.cjy.dao.impl.BookDaoImpl" />
+    <bean id="userDao" class="com.cjy.dao.impl.UserDaoImpl"/>
+
+    <bean id="bookService" class="com.cjy.service.impl.BookServiceImpl">
+        <property name="bookDao" ref="bookDao"/>
+        <property name="userDao" ref="userDao"/>
+        <property name="connectionNum" value="10"/>
+        <property name="dataBaseName" value="mysql"/>
+    </bean>
+
+    <bean id="userService" class="com.cjy.service.impl.UserServiceImpl">
+        <constructor-arg name="bookDao" ref="bookDao"/>
+        <constructor-arg name="userDao" ref="userDao"/>
+        <constructor-arg name="connectionNum" value="10"/>
+        <constructor-arg name="dataBaseName" value="Mysql"/>
+     </bean>
+
+    <bean id="autoService" class="com.cjy.service.impl.AutoServiceImpl" autowire="byType"/>
+
+    <bean id="collectionService" class="com.cjy.service.impl.CollectionServiceImpl">
+        <property name="array">
+            <array>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>one</value>
+                <value>two</value>
+                <value>three</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>red</value>
+                <value>yellow</value>
+                <value>blue</value>
+                <value>red</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="name" value="cjy"></entry>
+                <entry key="age" value="23"></entry>
+                <entry key="salary" value="600"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="name">zhc</prop>
+                <prop key="age">24</prop>
+                <prop key="salary">3500</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
