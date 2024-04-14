@@ -1,0 +1,6 @@
+com\cjy\controller\BookController.class
+com\cjy\domain\Book.class
+com\cjy\domain\User.class
+com\cjy\config\SpringMvcConfig.class
+com\cjy\controller\UserController.class
+com\cjy\config\ServletContainersInitConfig.class
