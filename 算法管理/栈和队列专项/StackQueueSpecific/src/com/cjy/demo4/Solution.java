@@ -12,42 +12,31 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class Solution {
     public static void main(String[] args) {
-        Stack<Object> stack = new Stack<>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        System.out.println(stack.peek());
+        String s = "abbaca";
+        System.out.println(removeDuplicates(s));
     }
-    public String removeDuplicates(String s) {
-        Queue<Character> queue1 = new LinkedBlockingQueue<>();
-        Queue<Character> queue2 = new LinkedBlockingQueue<>();
+
+    public static String removeDuplicates(String s) {
         Stack<Character> stack = new Stack<>();
 
         for (int i = 0; i < s.length(); i++) {
-            queue1.add(s.charAt(i));
-        }
+            if (stack.isEmpty()) {
+                stack.push(s.charAt(i));
+                continue;
+            }
 
-        while(true) {
-            Character temp = queue1.remove();
-
-
-            stack.push(temp);
-            if (stack.peek() == temp) {
+            if (s.charAt(i) == stack.peek()) {
                 stack.pop();
-                queue2.add(stack.pop());
-                while (!queue1.isEmpty()) {
-                    queue2.add(queue1.remove());
-                }
-                while (!queue2.isEmpty()) {
-                    queue1.add(queue2.remove());
-                }
+            } else {
+                stack.push(s.charAt(i));
             }
         }
+        String result = "";
 
+        while (!stack.isEmpty()) {
+            result = stack.pop() + result;
+        }
 
-
-
-
-        return null;
+        return result;
     }
 }
