@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  */
 @Configuration
 public class SpringMvcSupport extends WebMvcConfigurationSupport {
-    @Override
+        @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         //当访问/pages/????时候，从/pages目录下查找内容
         registry.addResourceHandler("/pages/**").addResourceLocations("/pages/");
