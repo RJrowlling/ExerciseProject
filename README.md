@@ -16,17 +16,29 @@
 
 2024年4月4号~2024年4月10号：学习了Java虚拟机（JVM），前期《黑马程序员JVM完整教程》视频为主，后期以JVM文字资料学习为主（JVM），主要掌握了JVM的内存区域（运行时数据区、栈帧结构）、Java引用、可达性分析、GC算法、GC收集器、类文件结构、类加载机制等（JVM）
 
-2024年4月11号~至今：目前正在学习SSM框架，包括Spring、SpringMVC、Maven、SpringBoot和MyBatisPlus，以《黑马程序员SSM框架教程》视频为主，同时做好笔记和相关代码练习（SSM框架）
+2024年4月11号~2024年4月19号：学习了SSM框架，包括Maven、MyBatis、Spring、SpringMVC和SpringBoot，以《黑马程序员SSM框架教程》视频为主。会使用MyBatis的注解和MyBatis的xml配置文件对数据库进行操作；在Spring这块，理解了IoC核心容器和AOP面向切面编程的思想、知道了Bean的生命周期和AOP开发的优势；在SpringMVC这块，清楚了Web请求处理的流程和一些常用的注解的功能；在SpringBoot这块，知道了自动化装配的过程和它的实现原理（SSM框架）
+
+2024年4月20号 ~ 至今：通过以上的学习，已经把Java的主体知识都学了一遍，现在的重点就是要把这么多的知识（Java基础、Java集合、Java并发、JVM和SSM框架）串起来，目前正在通过理解八股的方法，对以上的知识点进行复习，可以先走马观花一遍，再细致看一遍，再重点看不懂的一遍，至少要看三遍（八股文）
 
 
 
+## DemoCode：
+
+JavaCode：练习韩顺平老师《零基础30天学习Java》的homework；
+
+ConcurrentTest：练习并发的demo；
+
+JVMTest：练习Java虚拟机的demo；
+
+SpringTest：练习Spring Framework的demo；
+
+SpringmvcTest：练习SpringMVC的demo；
+
+SpringBootTest：练习SpringBoot的demo；
+
+MyBatisTest：练习MyBatis的demo；
 
 
-
-
-## JavaCode：
-
-练习韩顺平老师《零基础30天学习Java》的homework。
 
 ## 项目管理：
 
@@ -42,9 +54,13 @@
 
 2024年3月3号：房屋出租系统项目（后端JavaOOP）
 
+
+
 ## 算法管理：
 
-一天一道算法题，一般在晚上做
+2024年3月9号 ~ 至今：目前正在练习代码随想录里的算法。
+
+
 
 ## 开发笔记：
 
